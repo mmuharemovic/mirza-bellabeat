@@ -22,6 +22,8 @@
 		C25819C72640C2DA00B424E7 /* DesignApiToDomainModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25819C62640C2DA00B424E7 /* DesignApiToDomainModelMapper.swift */; };
 		C25819CD2640C3E800B424E7 /* UIColor + Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25819CC2640C3E800B424E7 /* UIColor + Additions.swift */; };
 		C25819D22640C6B600B424E7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25819D12640C6B600B424E7 /* ViewModel.swift */; };
+		C26D73DA2641011300C43D74 /* DesignApiToDomainModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D73D92641011300C43D74 /* DesignApiToDomainModelMapperTests.swift */; };
+		C26D73E2264103D500C43D74 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D73E1264103D500C43D74 /* ViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		C25819C62640C2DA00B424E7 /* DesignApiToDomainModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignApiToDomainModelMapper.swift; sourceTree = "<group>"; };
 		C25819CC2640C3E800B424E7 /* UIColor + Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Additions.swift"; sourceTree = "<group>"; };
 		C25819D12640C6B600B424E7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C26D73D92641011300C43D74 /* DesignApiToDomainModelMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignApiToDomainModelMapperTests.swift; sourceTree = "<group>"; };
+		C26D73E1264103D500C43D74 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +117,8 @@
 		C25819712640951E00B424E7 /* mirza-bellabeat */ = {
 			isa = PBXGroup;
 			children = (
-				C25819CB2640C3CC00B424E7 /* Extensions */,
 				C25819AA2640973700B424E7 /* App */,
+				C25819CB2640C3CC00B424E7 /* Extensions */,
 				C25819A72640971700B424E7 /* UI */,
 				C25819A92640972900B424E7 /* ViewModel */,
 				C25819A5264096FD00B424E7 /* Use Case */,
@@ -132,6 +136,8 @@
 			children = (
 				C25819892640951F00B424E7 /* mirza_bellabeatTests.swift */,
 				C258198B2640951F00B424E7 /* Info.plist */,
+				C26D73D92641011300C43D74 /* DesignApiToDomainModelMapperTests.swift */,
+				C26D73E1264103D500C43D74 /* ViewModelTests.swift */,
 			);
 			path = "mirza-bellabeatTests";
 			sourceTree = "<group>";
@@ -192,17 +198,17 @@
 			isa = PBXGroup;
 			children = (
 				C25819B526409A4E00B424E7 /* Domain */,
-				C25819B426409A4700B424E7 /* ApI */,
+				C25819B426409A4700B424E7 /* Api */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C25819B426409A4700B424E7 /* ApI */ = {
+		C25819B426409A4700B424E7 /* Api */ = {
 			isa = PBXGroup;
 			children = (
 				C25819B626409BAF00B424E7 /* DesignApiResponseModel.swift */,
 			);
-			path = ApI;
+			path = Api;
 			sourceTree = "<group>";
 		};
 		C25819B526409A4E00B424E7 /* Domain */ = {
@@ -376,7 +382,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26D73DA2641011300C43D74 /* DesignApiToDomainModelMapperTests.swift in Sources */,
 				C258198A2640951F00B424E7 /* mirza_bellabeatTests.swift in Sources */,
+				C26D73E2264103D500C43D74 /* ViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
