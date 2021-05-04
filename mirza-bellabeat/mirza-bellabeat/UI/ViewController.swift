@@ -76,21 +76,21 @@ class ViewController: UIViewController {
 
     @IBAction func backgroundColorButtonPressed(_ sender: Any) {
         pickerType = .backgroundColor
-        showTimeoutPicker()
+        showColorPicker()
     }
 
     @IBAction func titleTextColorButtonPressed(_ sender: Any) {
         pickerType = .textColor
-        showTimeoutPicker()
+        showColorPicker()
     }
 
-    private func showTimeoutPicker() {
+    private func showColorPicker() {
         if let picker = picker, view.subviews.contains(picker) {
             return
         }
 
-        addDatePicker()
-        addDatePickerToolbar()
+        addColorPicker()
+        addColorPickerToolbar()
 
         UIView.animate(withDuration: Constants.animationDuration, animations: { [weak self] in
             self?.picker?.transform = CGAffineTransform(translationX: .zero, y: -Constants.pickerHeight)
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
         })
     }
 
-    private func hideTimeoutPicker() {
+    private func hideColorPicker() {
         UIView.animate(withDuration: Constants.animationDuration, animations: { [weak self] in
             self?.picker?.transform = CGAffineTransform(translationX: .zero, y: .zero)
             self?.toolbar?.transform = CGAffineTransform(translationX: .zero, y: .zero)
@@ -120,15 +120,15 @@ class ViewController: UIViewController {
             viewModel.backgroundColorChanged(colorIndex: index)
         }
 
-        hideTimeoutPicker()
+        hideColorPicker()
     }
 
     @objc
     private func onCancelButtonTapped() {
-        hideTimeoutPicker()
+        hideColorPicker()
     }
 
-    private func addDatePicker() {
+    private func addColorPicker() {
         picker = UIPickerView()
         picker?.delegate = self
         picker?.dataSource = self
@@ -147,7 +147,7 @@ class ViewController: UIViewController {
         }
     }
 
-    private func addDatePickerToolbar() {
+    private func addColorPickerToolbar() {
         toolbar = .init(
             frame: .init(
                 x: .zero,
