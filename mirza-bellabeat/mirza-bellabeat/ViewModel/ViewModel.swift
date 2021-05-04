@@ -10,7 +10,6 @@ protocol ViewModelProtocol {
     var setTextColor: ((UIColor) -> Void)? { get set }
     var setBackgroundColor: ((UIColor) -> Void)? { get set }
     var showError: ((Error) -> Void)? { get set }
-
     var textColors: [UIColor]? { get }
     var backgroundColors: [UIColor]? { get }
 }
